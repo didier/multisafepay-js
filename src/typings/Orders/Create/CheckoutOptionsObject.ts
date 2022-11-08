@@ -1,3 +1,1 @@
-export interface CheckoutOptionsObject {
-    
-}
+export interface CheckoutOptionsObject {}

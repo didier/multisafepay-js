@@ -1,19 +1,23 @@
 {
-  "name": "@robindelaater/multisafepay-js",
-  "version": "1.1.1",
-  "description": "MultiSafepay API wrapper for node",
-  "author": "Robin de Laater",
-  "license": "ISC",
-  "main": "dist/main/index.js",
-  "types": "dist/main/index.d.ts",
-  "scripts": {
-    "build": "rm -Rf dist && tsc"
-  },
-  "devDependencies": {
-    "ts-loader": "^9.4.1",
-    "typescript": "^4.8.3"
-  },
-  "dependencies": {
-    "axios": "^0.27.2"
-  }
+	"name": "@robindelaater/multisafepay-js",
+	"version": "1.1.1",
+	"description": "MultiSafepay API wrapper for node",
+	"author": "Robin de Laater",
+	"license": "ISC",
+	"main": "dist/main/index.js",
+	"types": "dist/main/index.d.ts",
+	"scripts": {
+		"build": "rm -Rf dist && tsc",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"eslint": "^8.27.0",
+		"prettier": "^2.7.1",
+		"ts-loader": "^9.4.1",
+		"typescript": "^4.8.3"
+	},
+	"dependencies": {
+		"axios": "^0.27.2"
+	}
 }
